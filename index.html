@@ -2,12 +2,311 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Resume page" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Resume</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <header class="l-header" id="header">
+        <nav class="nav bd-container">
+          <a href="#" class="nav__logo">Bryan</a>
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#home" class="nav__link active-link">
+                  <i class="nav__icon bx bx-home"></i>Home
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#profile" class="nav__link active-link">
+                  <i class="nav__icon bx bx-user"></i>Profile
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#education" class="nav__link active-link">
+                  <i class="nav__icon bx bxs-book-alt"></i>Education
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#skills" class="nav__link active-link">
+                  <i class="nav__icon bx bx-receipt"></i>Skills
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#experience" class="nav__link active-link">
+                  <i class="nav__icon bx bx-receipt"></i>Experience
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a
+                  href="https://bimbaquingo.vercel.app/"
+                  class="nav__link active-link"
+                  target="_blank"
+                >
+                  <i class="nav__icon bx bx-link"></i>Portfolio
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="nav__icon bx bx-grid-alt"></i>
+          </div>
+        </nav>
+      </header>
+
+      <main class="l-main bd-container">
+        <div class="resume">
+          <div class="resume__left">
+            <section class="home" id="home">
+              <div class="home__container section bd-grid">
+                <div class="home__data bd-grid">
+                  <img
+                    src="https://avatars.githubusercontent.com/u/52583430"
+                    alt="Bryan"
+                    class="home__img"
+                  />
+                  <h1 class="home__title">Bryan <b>Imbaquingo</b></h1>
+                  <h3 class="home__profesion">Fullstak javascipt developer</h3>
+                  <!-- download pdf movile -->
+                  <div>
+                    <a
+                      download=""
+                      href="/assets/ResumeCV.pdf"
+                      class="home__button-movil"
+                      >Download Resume</a
+                    >
+                  </div>
+                </div>
+                <div class="home__address bd-grid">
+                  <span class="home__information">
+                    <i class="bx bx-map home__icon"></i>Quito-Ecuador
+                  </span>
+                  <span class="home__information">
+                    <i class="bx bxs-envelope home__icon"></i
+                    >bryanimbaquingo1@gmail.com
+                  </span>
+                  <a
+                    href="https://bimbaquingo.vercel.app/"
+                    target="_blank"
+                    class="home__information social__link"
+                  >
+                    <i class="bx bx-link home__icon"></i>bimbaquingo.vercel.app
+                  </a>
+                </div>
+              </div>
+              <!-- change theme -->
+              <i
+                class="bx bx-moon change-theme"
+                title="Theme"
+                id="theme-button"
+              ></i>
+              <!-- buton to download PDF -->
+              <i
+                class="bx bx-download generate-pdf"
+                title="Generate PDF"
+                id="resume-button"
+              ></i>
+            </section>
+            <!-- social -->
+            <section class="social section">
+              <h2 class="section-title">Social</h2>
+              <div class="social__container bd-grid">
+                <a
+                  href="https://www.linkedin.com/in/bryan-andres-imbaquingo-almagro-636a90168/"
+                  target="_blank"
+                  class="social__link"
+                >
+                  <i class="bx social__icon bxl-linkedin-square"></i>Linkedin
+                </a>
+                <a
+                  href="https://github.com/bimbaquingoch"
+                  target="_blank"
+                  class="social__link"
+                >
+                  <i class="bx social__icon bxl-github"></i>bimbaquingoch
+                </a>
+                <a
+                  href="https://twitter.com/bryandresimba"
+                  target="_blank"
+                  class="social__link"
+                >
+                  <i class="bx social__icon bxl-twitter"></i>@bryandresimba
+                </a>
+              </div>
+            </section>
+            <!-- Profile -->
+            <section class="profile section" id="profile">
+              <h2 class="section-title">Profile</h2>
+              <p class="profile__description">
+                I am 24, ecuadorian fascinated by web technologies, curious and
+                I like to learn new technologies, frameworks, libraries, etc.
+              </p>
+              <br />
+              <p class="profile__description">
+                My first program language was java, actually I use
+                javascript/typescript technologies and I love it!
+              </p>
+            </section>
+          </div>
+          <div class="resume__right">
+            <section class="experience section" id="experience">
+              <h2 class="section-titel">Experience</h2>
+
+              <div class="experience__container bd-grid">
+                <div class="experience__content">
+                  <div class="experience__time">
+                    <span class="experience__rounder"></span>
+                    <span class="experience__line"></span>
+                  </div>
+
+                  <div class="experience__data bd-grid">
+                    <h3 class="experience__title">
+                      Fullstak javascript developer
+                    </h3>
+                    <span class="experience__company">
+                      From May 2021 to July 2021
+                    </span>
+                    <p class="experience__description">
+                      Design user interface for develop an Ecommerce using
+                      figma, then in the code I used NodeJS, Express, React,
+                      Material UI and Firebase
+                    </p>
+                  </div>
+                </div>
+
+                <div class="experience__content">
+                  <div class="experience__time">
+                    <span class="experience__rounder"></span>
+                    <span class="experience__line"></span>
+                  </div>
+
+                  <div class="experience__data bd-grid">
+                    <h3 class="experience__title">
+                      Fullstak javascript developer
+                    </h3>
+                    <span class="experience__company">
+                      From July 2020 to September 2020
+                    </span>
+                    <p class="experience__description">
+                      Website for Doctor Office: Frontend and backend develpment
+                      using NodeJS, MongoDB, Express, Bootstrap and deployed on
+                      Heroku.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Education -->
+            <section class="education section" id="education">
+              <h2 class="section-title">Education</h2>
+              <div class="education__contaier bd-grid">
+                <!-- content -->
+                <div class="education__content">
+                  <div class="education__time">
+                    <span class="education__rounder"></span>
+                    <span class="education__line"></span>
+                  </div>
+
+                  <div class="education__data bd-grid">
+                    <h3 class="education__title">
+                      Engineer degree, Computer Science
+                    </h3>
+                    <span class="education__studies">
+                      Salesian Polytechnic University
+                    </span>
+                    <span class="education__year">2017-2022</span>
+                  </div>
+                </div>
+                <!-- content -->
+                <div class="education__content">
+                  <div class="education__time">
+                    <span class="education__rounder"></span>
+                    <!-- <span class="education__line"></span> -->
+                  </div>
+
+                  <div class="education__data bd-grid">
+                    <h3 class="education__title"> Web Developer </h3>
+                    <span class="education__studies"> Udemy</span>
+                    <span class="education__year">2019-20..</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- certificados -->
+            <section class="certificate section" id="certificates">
+              <h2 class="section-title">Certificates</h2>
+              <div class="certificate__container bd-grid">
+                <div class="certificate__content">
+                  <h3 class="certificate-title">Cambridge Assessment</h3>
+                  <p class="certificate__description">
+                    Certificate in ESOL international (entry 3) (Preliminary)
+                    Level B1
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Skills -->
+            <section class="skills section" id="skills">
+              <h2 class="section-title">Skills</h2>
+              <div class="skills__content">
+                <p class="skill__item">javascript</p>
+                <p class="skill__item">typescript</p>
+                <p class="skill__item">html</p>
+                <p class="skill__item">css</p>
+                <p class="skill__item">react</p>
+                <p class="skill__item">nextjs</p>
+                <p class="skill__item">nodejs</p>
+                <p class="skill__item">material ui</p>
+                <p class="skill__item">tailwind</p>
+                <p class="skill__item">bootstrap</p>
+                <p class="skill__item">git</p>
+                <p class="skill__item">github</p>
+                <p class="skill__item">mongoDB</p>
+                <p class="skill__item">sql</p>
+                <p class="skill__item">mysql</p>
+                <p class="skill__item">php</p>
+                <p class="skill__item">bash</p>
+                <p class="skill__item">python</p>
+              </div>
+            </section>
+
+            <!-- lenguajes -->
+            <section class="languages section">
+              <h2 class="section-title">Languages</h2>
+              <div class="languages__container">
+                <ul class="languages__content bd-grid">
+                  <li class="languages__name">
+                    <span class="languages__circle"></span>Spanish
+                  </li>
+                  <li class="languages__name">
+                    <span class="languages__circle"></span>English
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      <a href="#" class="scrolltop" id="scroll-top">
+        <i class="bx bxs-up-arrow scrolltop__icon"></i>
+      </a>
+    </div>
     <script type="" src="/main.js"></script>
   </body>
 </html>
