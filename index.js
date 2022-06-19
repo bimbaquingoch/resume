@@ -109,15 +109,17 @@ function removeScale() {
 // generate PDF
 let areaCV = document.getElementById("area-cv");
 let resumeButton = document.getElementById("resume-button");
+let opt = {
+  margin: 0,
+  filename: "Bryan_Imbaquingo.pdf",
+};
 
 function generateResume() {
-  html2pdf(areaCV);
+  html2pdf(areaCV, opt);
 }
 
 resumeButton.addEventListener("click", () => {
   sclaeCV();
   generateResume();
-  setTimeout(() => {
-    removeScale();
-  }, 2000);
+  setTimeout(() => removeScale(), 5000);
 });
