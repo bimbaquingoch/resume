@@ -1,5 +1,6 @@
 {
   "name": "resume",
+  "type": "module",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -9,5 +10,8 @@
   },
   "devDependencies": {
     "vite": "^2.9.9"
+  },
+  "dependencies": {
+    "html-to-pdf-js": "^0.9.3"
   }
 }

@@ -11,7 +11,6 @@ const showMenu = (toggleID, navID) => {
 showMenu("nav-toggle", "nav-menu");
 
 // remove menu mobile
-
 const navLink = document.querySelectorAll(".nav__link");
 
 function linkAction() {
@@ -22,13 +21,11 @@ function linkAction() {
 navLink.forEach((link) => link.addEventListener("click", linkAction));
 
 // scroll sections
-
 const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
   const scrollY = window.scrollY;
   // const scrollY = window.pageYOffset;
-
   sections.forEach((section) => {
     let sectionHeight = section.offsetHeight;
     let sectionTop = section.offsetTop - 50;
@@ -110,9 +107,17 @@ function removeScale() {
 }
 
 // generate PDF
-
+let areaCV = document.getElementById("area-cv");
 let resumeButton = document.getElementById("resume-button");
+
+function generateResume() {
+  html2pdf(areaCV);
+}
 
 resumeButton.addEventListener("click", () => {
   sclaeCV();
+  generateResume();
+  setTimeout(() => {
+    removeScale();
+  }, 2000);
 });
