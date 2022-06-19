@@ -167,6 +167,10 @@ img {
     z-index: var(--z-fixed);
     transition: 0.5s;
   }
+  .nav:hover .nav__menu,
+  .nav:active .nav__menu {
+    bottom: 6%;
+  }
 }
 
 .nav__logo,
