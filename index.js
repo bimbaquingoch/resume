@@ -111,7 +111,7 @@ let areaCV = document.getElementById("area-cv");
 let resumeButton = document.getElementById("resume-button");
 let opt = {
   margin: 0,
-  filename: "Bryan_Imbaquingo.pdf",
+  filename: "Bryan_ImbaquingoCV.pdf",
 };
 
 function generateResume() {
