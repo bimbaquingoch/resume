@@ -134,7 +134,7 @@ img {
 
 .bd-grid {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 
 .l-header {
@@ -337,7 +337,7 @@ img {
 
 .education__data,
 .experience__data {
-  gap: 0.3rem;
+  gap: 0.27rem;
 }
 
 .education__title,
